@@ -46,8 +46,102 @@ if (true) {
 }
 console.log(y); // Error: y is not defined (because it's scoped to the if block)
 ###########
+As it can be seen above, we can modify an array if we have declared the array using const. 
+Ottherwise, if it is a primitive value, we can not change it later on. 
 We should use camelCase for the naming conventions of multiplewords. 
 For naming conventions, it is better to not use upper case as the first letter. 
 If there is any constant like: 
 pi, we write it as PI = 3.14152
+In Javascript, values are eithere objects or primitives. 
+We have 7 different primitive datatypes in Javascript: 
+1- Numbers --> Integers or decimals. (All numbers are of the type number).
+2- String --> text. (We use '' or "" to declare them).
+3- Boolean --> True or False. 
+4- Undefined --> Unlike other programming languages, we have undefined in Javascript. Undefined
+is basically a value taken by a variable that is not yet defined. for instance: 
+let children;
+5- Null --> This means also empty value. Show descripttion below for the differences between 
+null and unkown. 
+6- Symbol --> Value that is unique and can not be changed. (Not very useful). (ES2015)
+7- BigInt --> The large integers than the Number type can hold. 
+The difference between undefined and null:
+undefined: When a variable is declared but not assigned a value, it is said to have an 
+"undefined" value. Also, the value returned by a function that doesn't explicitly return 
+anything is undefined. It indicates the absence of a value.
+########
+let x;
+console.log(x); // undefined
+
+function foo() {}
+console.log(foo()); // undefined
+########
+null: null is explicitly assigned to a variable to represent the absence of any value or an 
+empty value. It is often used as a placeholder to indicate that a variable or object property 
+intentionally does not have a value.
+Example: 
+########
+let y = null;
+console.log(y); // null
+########
+Javascript has dynamic typing. We do not need to manuaelly define the datatype, and Javascript
+will automatically define the datatype itself. 
+In Javascript, variables do not have a type, and it is only values that have a type. 
+We can also assign a new datatype to an already declared variable in Javascript. This is due 
+to the power of the dynamic typing. 
+Javascript is excuted from top to bottom, line by line. 
+In Javascript, in order to see the type of a value, we use use typeof
+########
+console.log(typeof (ermia));
+########
+When we declare variables using const, we can not just leave it empty. In other words, we
+can not do the following: 
+########
+const ermia;
+########
+Var is the third way to decalre variables. We should aviod using var to declare 
+variables. It works the same as let. 
+var is one of the ways to declare variables in JavaScript. However, it behaves differently 
+from const and let in terms of scope and hoisting.
+Function scope: Variables declared with var are function-scoped. This means that they are
+visible throughout the entire function in which they are declared.
+########
+function example() {
+    if (true) {
+        var x = 10;
+    }
+    console.log(x); // 10 - x is accessible here
+}
+########
+Hoisting: Variable declarations using var are hoisted to the top of their containing function 
+or script. This means that the variable declaration is moved to the top of its scope during 
+the compilation phase, but the assignment remains in place.
+########
+console.log(x); // undefined
+var x = 10;
+// This will be excuted in the following way:
+var x;
+console.log(x); // undefined
+x = 10;
+########
+Redeclaration: Variables declared with var can be redeclared within the same scope without 
+causing an error.
+Global scope: If var is used outside of any function, the variable becomes a property of 
+the global object (in a web browser, the global object is window).
+Due to its hoisting behavior and lack of block scope, using var can sometimes lead to 
+unexpected behavior and make code harder to understand and maintain. That's why const
+and let are generally preferred for variable declarations in modern JavaScript code. 
+They provide block scope, prevent accidental redeclaration, and reduce the likelihood 
+of bugs.
+When doing the following: 
+########
+ermia = 10;
+########
+We are not decalring ermia here. In this case, JavaScript creats a property on the global 
+object.
+An operator 
+
+
+
+
+
 

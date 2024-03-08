@@ -1,0 +1,23 @@
+Whenever we want a browser pop up we use the following for instance: 
+alert("Hello world)
+When we want to print out something in the consloe log, then we write: 
+console.log("My name is Ermia)
+We can do whatever we want to do in the console of the broweser. On mac: 
+Command + Option + j
+Javascript is a high-level, object-orianted, multi-paradigm programming language. 
+High level since we do not need to for instace think of the abstractions such as memory. 
+Reminder of HTML: 
+<!DOCTYPE html>
+<html lan = "en">
+<head>
+</head>
+</html>
+We have the style and the title inside the head. 
+We can write our Javascript code in the head as well by doin gthe following: 
+<script>
+</script>
+We can eithere write it that way or we can have a js file where we juct get the js file to the
+script using 
+<script src = "">
+</script>
+The scriot command could eithere be in the head or body. It does not matter

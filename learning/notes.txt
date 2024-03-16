@@ -1,6 +1,6 @@
 Whenever we want a browser pop up we use the following for instance: 
 alert("Hello world)
-When we want to print out something in the consloe log, then we write: 
+When we want to print out something in the console log, then we write: 
 console.log("My name is Ermia)
 We can do whatever we want to do in the console of the broweser. On mac: 
 Command + Option + j
@@ -138,8 +138,54 @@ ermia = 10;
 ########
 We are not decalring ermia here. In this case, JavaScript creats a property on the global 
 object.
-An operator 
-
+An operator could be mathematical in JavaScript. 
+########
+const ermiaAge = 2024 - 2002;
+########
+We can also use console.log to print out two things at the same time. 
+########
+console.log(13,14)
+########
+In JavaScript, when we use ** at the same time when we create exponents. 
+Another type of operator is the typeof operator which shows the type of a value. 
+Assignment operator in JS: 
+1- =
+2- += (for instance x += 10 --> x = x + 10)
+3- *=
+4- ++ (Incrementing)
+5- -- (Decrementing)
+Comparison operators in JS: 
+By using these operators, we create Boolean values. 
+1- >
+2- <
+3- >=
+4- <=
+5- ==
+6- ===
+Note also that the browser has acsess to the current file that we are writin at. 
+Operators Precedence: 
+1- ()
+2- Arithmetics
+3- Comparison
+We can search for the JavaScript precedence table to check whihc comes first. 
+Strings and template literals: 
+##########
+const firstName = "Ermia";
+const lastName = " Ermia";
+const birthDay = 2002;
+const currentYear = 2024;
+const ermia = "I'm" + firstName + ", a " + (currentYear - birthDay) + "studnet!"
+########
+As can be seen (currentYear - birthDay) is a number and when we combine it with bunch of 
+strings, we do something called type coercion. This is when we are combine both numebrs 
+with strings or we combine two or more types toghtre. 
+Instead of the code above, we can use template literals after ES2006. 
+We can use the following in order to declare template literals. 
+#######
+const ermiaNew = `I'm  ${firstName} `;
+#######
+A new line in JavaScript is created using \n\. But with using template literals we can 
+use enter to create new lines. 
 
 
 

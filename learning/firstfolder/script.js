@@ -38,12 +38,13 @@ console.log(variable);
 // my`);
 // console.log("Ermia \n\is not a good boy!")
 const age = 10;
-const isOldEnough = (age >= 18);
-if (isOldEnough) {
-    console.log("Your are allowed to get a driving licens");
-}
-else {
-    console.log(`you should come back in ${18 - age} years!😂`)
-}
+console.log(`${"Ermia is Gay"} and your mom is ${age} years old`);
+// const isOldEnough = (age >= 18);
+// if (isOldEnough) {
+//     console.log("Your are allowed to get a driving licens");
+// }
+// else {
+//     console.log(`you should come back in ${18 - age} years!😂`)
+// }
 
 
